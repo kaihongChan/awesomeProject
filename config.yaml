@@ -1,0 +1,28 @@
+# server configuration
+server:
+  port: 9501
+
+# casbin configuration
+casbin:
+  model-path: './resource/rbac_model.conf'
+
+# redis configuration
+redis:
+  db: 0
+  addr: "127.0.0.1"
+  port: 6379
+  password:
+
+gorm:
+  driver: "mysql"
+
+mysql:
+  host: "127.0.0.1"
+  port: "3306"
+  dbname: "awesome"
+  username: "root"
+  password: "root"
+  params: "root"
+  max-idle-conn: 10
+  max-open-conn: 100
+  log-mode: false
